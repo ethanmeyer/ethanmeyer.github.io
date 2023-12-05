@@ -35,19 +35,29 @@
     <div style="text-align: center">
       <h1>Tile Trial</h1>
       <h3>Technologies Used: GameMaker Studio 2 | Networking</h3>
-      <h3>February 2022<h3>
+      <h3>June 2022<h3>
       <div id="main-content">
         <p style="float: left" id="margin">This project is a collaboration
           between 2 other students and myself that was completed on June 1, 2022.
           Tile Trial is a multiplayer puzzle
-          game connected over the internet. Each "crate" has 4 sides which need
-          to be matched to other crates. You can see to the left a design of
-          what the game logic looks like as well as how it might be scored. We are making this
-          game within the GameMaker Studio 2 application and will be using
+          game connected over the internet. Each "tile" has 4 sides which need
+          to be matched to other tiles. One photo I have included shows an early
+          prototype as well as how the game could have been scored. We made this
+          game within the GameMaker Studio 2 application and used be using
           GameMaker Language to program the logic of the game. I worked on the
           tcp networking and multiplayer gameplay for Tile Trial.
+
+          To do the networking I had to sync game clients to one game server which
+          was hosted by one of the players. When an action was performed it was sent from
+          a client to the server. From there the server sent a message to all clients that
+          an action had happened. In testing we had to balance the rate that we
+          would send messages and making sure players could still have a smooth
+          visual experience.
         </p>
-        <img id="margin" src="../images/tile-trial.png" style="image-fit: contain; border: 5px solid #555;">
+        <div>
+          <img id="margin" src="../images/crate-break-old.png" style="image-fit: contain; border: 5px solid #555;">
+          <img id="margin" src="../images/tile-trial.png" style="image-fit: contain; border: 5px solid #555;">
+        </div>
       </div>
     </div>
   </body>
